@@ -1,0 +1,82 @@
+/* https://coolors.co/2b3a67-496a81-66999b-b3af8f-ffc482  */
+
+/* ========================= header styles ==========================*/
+header {
+    background-color: #191a1d;
+
+}
+
+/* ========================= navigation styles ==========================*/
+
+.navbar .navbar-nav .nav-link {
+    font-family: "Raleway", sans-serif;
+    color: #ababab;
+    text-decoration: none;
+    padding: 20px 0px;
+    font-size: 18px;
+    /* text-transform: uppercase; */
+}
+
+.navbar .navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    border: 1px solid #CF9245;
+    border-radius: 2px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 769px) {
+
+    /* ========================= navigation styles ==========================*/
+    .navbar .navbar-nav .nav-link {
+        text-decoration: none;
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    .navbar .navbar-nav .nav-link::after {
+        content: "";
+        display: block;
+        top: 10px;
+        width: 0;
+        position: relative;
+        border: 3px solid #191a1d;
+        border-radius: 3px;
+    }
+
+    .navbar .navbar-nav .nav-link:hover::after {
+        border: 3px solid #CF9245;
+        font-weight: normal;
+        font-size: 32px;
+        width: 100%;
+        transform: translateX(-50%);
+        left: 50%;
+        transition: width ease .5s;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link.active::after {
+        border: 3px solid #CF9245;
+        font-weight: normal;
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .navbar .navbar-nav .nav-item .divider::after {
+        content: "";
+        /* display: block; */
+        position: relative;
+        top: -50px;
+        width: 100%;
+        border: 1px solid rgba(207, 146, 69, .5);
+        border-radius: 2px;
+        /* border-color: rgba(0, 0, 0, 1); */
+    }
+
+}
