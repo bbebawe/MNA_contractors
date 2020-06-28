@@ -203,13 +203,24 @@ header {
 }
 
 
-.fas {
-    font-size: 48px;
-    color: #1A1915
-}
 
 /* ========================= approach section styles ==========================*/
 
+/* ========================= footer  styles ==========================*/
+.footer-contact-item {
+    color: #ababab;
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+.footer-contact-svg {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.footer-contact-item a{
+    color: #ababab;
+}
 /* ========================= media quires styles ==========================*/
 
 @media screen and (min-width: 769px) {
@@ -301,3 +312,98 @@ header {
     } */
 }
 
+
+.tile-title {
+    text-align: center;
+    padding: 15px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    font-size: 22px;
+    border-bottom: 2px solid #FC9804;
+}
+
+
+#myCarousel {
+    padding: 0 70px;
+    margin-bottom: 60px;
+}
+
+#myCarousel .carousel-item {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 290px;
+}
+
+#myCarousel .carousel-item .img-box {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+#myCarousel .img-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+#myCarousel .testimonial {
+    padding: 30px 0 10px;
+}
+
+#myCarousel .overview {
+    font-style: italic;
+}
+
+#myCarousel .overview b {
+    text-transform: uppercase;
+    color: #7AA641;
+}
+
+#myCarousel .carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+    background: none;
+}
+
+#myCarousel .carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 68px;
+    line-height: 42px;
+    position: absolute;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+
+#myCarousel .carousel-indicators {
+    bottom: -40px;
+}
+
+#myCarousel .carousel-indicators li,
+#myCarousel .carousel-indicators li.active {
+    width: 12px;
+    height: 12px;
+    margin: 1px 3px;
+    border-radius: 50%;
+    border: none;
+}
+
+#myCarousel .carousel-indicators li {
+    background: #999;
+    border-color: transparent;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#myCarousel .carousel-indicators li.active {
+    background: #555;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
