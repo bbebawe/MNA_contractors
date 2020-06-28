@@ -36,7 +36,6 @@ header {
     display: block;
 }
 
-
 /* ========================= navigation styles ==========================*/
 
 .navbar .navbar-nav .nav-link {
@@ -66,7 +65,7 @@ header {
 /* ========================= logo styles ==========================*/
 .logo {
     width: 120px;
-    height: 80px;
+    height: 90px;
 }
 
 /* ========================= carousel styles ==========================*/
@@ -120,10 +119,20 @@ header {
     color: #ababab;
 }
 
+
+.grey-section {
+    background-color: #ababab;
+}
+
 /* ========================= service section styles ==========================*/
 
 .service-col {
     text-align: center;
+}
+
+.services-hero {
+    text-align: center;
+    font-weight: bold;
 }
 
 .service-col img {
@@ -133,6 +142,42 @@ header {
 
 .service-col p {
     font-weight: bold;
+}
+
+.services-button {
+    border-radius: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid #FC9804;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 20px;
+}
+
+.services-button::before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    background: #FC9804;
+    left: -40px;
+    top: -40px;
+    transform: rotate(37deg);
+    transition: all .5s;
+    opacity: 0.75;
+}
+
+.services-button:hover:before {
+    left: 90%;
+}
+
+.services-button a {
+    text-decoration: none;
+    color: #1A1915;
 }
 
 .services-link {
@@ -156,6 +201,14 @@ header {
     background-color: #FC9804;
     color: #1A1915;
 }
+
+
+.fas {
+    font-size: 48px;
+    color: #1A1915
+}
+
+/* ========================= approach section styles ==========================*/
 
 /* ========================= media quires styles ==========================*/
 
@@ -247,3 +300,4 @@ header {
         color: black;
     } */
 }
+
