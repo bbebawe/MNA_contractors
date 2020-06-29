@@ -25,6 +25,10 @@ header {
     background-color: #1A1915;
 }
 
+.header-bc {
+    background-color: #1A1915;
+}
+
 .header-contact {
     color: #ababab;
     text-align: center;
@@ -361,6 +365,10 @@ header {
     }
 
     /* ========================= carousel styles ==========================*/
+    /* .carousel {
+        padding-bottom: 150px;
+    } */
+
     /* .carousel {
         padding-bottom: 150px;
     } */
