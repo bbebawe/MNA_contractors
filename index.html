@@ -118,11 +118,11 @@
         <article class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 section-head">
+                    <div class="col-12 section-head" data-aos="fade-down">
                         <h2 class="main-heading-light">Our Philosophy</h2>
                         <div class="separator"></div>
                     </div>
-                    <div class="col-md-8 section-text">
+                    <div class="col-md-8 section-text" data-aos="zoom-in-down">
                         <p>Here at MNA Contractors LTD we have a different vision as our director is an interior
                             designer who is
                             personable for providing bespoke designs to the UK property market by creating exclusive and
@@ -139,7 +139,7 @@
                             stages of large scale property renovations in and around London.
                         </p>
                     </div>
-                    <div class="col-md-4 align-self-center">
+                    <div class="col-md-4 align-self-center" data-aos="zoom-in-down">
                         <img class="section-image img-fluid" src="./images/hero2.png" alt="">
                     </div>
                 </div>
@@ -148,15 +148,15 @@
         <section class="container-fluid dark-section dark-section-text">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 section-head">
+                    <div class="col-12 section-head" data-aos="fade-down">
                         <h2 class="main-heading-dark">Our Services</h2>
                         <div class="separator"></div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12" data-aos="zoom-in-down">
                         <p class="services-hero">Our professional team proudly can do:</p>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" data-aos="zoom-in-down">
                     <div class="row ">
                         <div class="col-6 col-sm-4 service-col">
                             <img src="./images/ex-design.png" alt="">
@@ -188,15 +188,15 @@
                     </div>
                 </div>
         </section>
-        <section class="container-fluid">
+        <section class="container-fluid"> 
             <div class="container">
-                <div class="row">
+                <div class="row" data-aos="fade-down">
                     <div class="col-12 section-head">
                         <h2 class="main-heading-light">Our Approach</h2>
                         <div class="separator"></div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" data-aos="zoom-in-down">
                     <div class="col-12 col-sm-6 col-md-3 text-center demo1">
                         <img class="svg-icon" src="./images/bullhorn.svg" alt="">
                         <h6>Listen</h6>
@@ -230,7 +230,7 @@
         </section>
         <section class="container-fluid dark-section dark-section-text">
             <div class="container">
-                <div class="row">
+                <div class="row" data-aos="fade-down">
                     <div class="col-12 section-head">
                         <h1 class="main-heading-dark">Our Latest Projects</h1>
                         <div class="separator"></div>
@@ -239,7 +239,7 @@
                         <p class="services-hero">Some of our accomplishments</p>
                     </div> -->
                 </div>
-                <div class="row">
+                <div class="row" data-aos="zoom-in-down">
                     <div class="col-12 col-sm-6 text-center">
                         <figure>
                             <img class="img-fluid project-image" src="./images/hero2.png" alt="">
@@ -258,14 +258,14 @@
         </section>
         <section class="container-fluid">
             <div class="container">
-                <div class="row">
+                <div class="row" data-aos="fade-down">
                     <div class="col-12 section-head">
                         <h1 class="main-heading-light">Our Happy Customers</h1>
                         <div class="separator"></div>
                     </div>
                 </div>
                 <!-- begin carousel -->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-aos="zoom-in-down">
                     <!-- Carousel indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -388,8 +388,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 500, // values from 0 to 3000, with step 50ms (default: 400)
+        });
     </script>
 </body>
 
