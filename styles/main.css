@@ -26,14 +26,18 @@ header {
 }
 
 .header-contact {
-    color: #ffffff;
+    color: #ababab;
     text-align: center;
+    border-bottom: 1px solid #FC9804;
 }
 
 .header-phone,
 .header-email {
     color: #FC9804;
     display: block;
+}
+.header-contact-svg {
+    width: 30px;
 }
 
 /* ========================= navigation styles ==========================*/
@@ -44,7 +48,6 @@ header {
     text-decoration: none;
     padding: 20px 0px;
     font-size: 18px;
-    /* text-transform: uppercase; */
 }
 
 .navbar .navbar-nav .nav-link::after {
@@ -74,17 +77,19 @@ header {
     max-height: 200px;
 }
 
-/* ========================= welcome section styles ==========================*/
+/* ========================= global section styles ==========================*/
+.section-head {
+    padding: 30px 0px;
+}
 
 .main-heading-light,
 .main-heading-dark {
-    padding-top: 30px;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    padding-bottom: 0px;
     /* background-color: #1A1915; */
     /* border-bottom:3px solid rgba(183, 8, 22, .5); */
-    padding-bottom: 0px;
     /* box-shadow: inset 0 -5px 0 -1px rgba(183, 8, 22, .5); */
     /* transition: box-shadow .5s ease; */
 }
@@ -99,10 +104,16 @@ header {
 
 .separator {
     width: 90%;
-    margin: 0 auto 30px auto;
+    margin: 0 auto;
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 90, 63, 0), rgb(252, 152, 4), rgba(0, 90, 63, 0));
 }
+
+/* ========================= welcome section styles ==========================*/
+
+
+
+
 
 .section-image {
     margin-bottom: 30px;
@@ -210,17 +221,25 @@ header {
 .footer-contact-item {
     color: #ababab;
     margin: 0;
-    padding-bottom: 15px;
-    font-size: 18px;
-}
-.footer-contact-svg {
-    width: 30px;
-    margin-right: 5px;
+    padding-bottom: 10px;
+    font-size: 16px;
 }
 
-.footer-contact-item a{
+.footer-head {
+    font-weight: bold;
+    color: #FC9804;
+    font-size: 18px;
+}
+
+.footer-contact-svg {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-contact-item a {
     color: #ababab;
 }
+
 /* ========================= media quires styles ==========================*/
 
 @media screen and (min-width: 769px) {
