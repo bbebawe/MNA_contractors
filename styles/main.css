@@ -70,10 +70,20 @@ header {
     font-weight: bold;
 }
 
+.no-padding {
+    padding: 0;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 /* ========================= logo styles ==========================*/
 .logo {
-    width: 120px;
-    height: 90px;
+    width: 100px;
+    height: 66px;
 }
 
 /* ========================= carousel styles ==========================*/
@@ -264,6 +274,10 @@ header {
     float: left;
 }
 
+.footer-separator {
+    border-top: 1px solid #FC9804;
+}
+
 
 
 /* ========================= media quires styles ==========================*/
@@ -285,7 +299,7 @@ header {
     /* ========================= navigation styles ==========================*/
     .navbar .navbar-nav .nav-link {
         text-decoration: none;
-        font-size: 22px;
+        font-size: 19px;
         padding: 15px 15px 0px 15px;
     }
 
@@ -322,8 +336,6 @@ header {
         transition: width ease .5s;
     }
 
-
-
     .navbar .navbar-nav .nav-item .divider::after {
         content: "";
         /* display: block; */
@@ -335,13 +347,17 @@ header {
         margin-bottom: 0px;
     }
 
+    .no-padding {
+        padding: 0;
+    }
+
     /* ========================= logo styles ==========================*/
 
     .logo {
-        width: 180px;
-        height: 100px;
+        width: 120px;
+        height: 80px;
         margin: 0;
-        padding: 10px;
+        padding: 5px;
     }
 
     /* ========================= carousel styles ==========================*/
@@ -390,7 +406,7 @@ header {
         margin-right: 15px;
         float: left;
     }
-    
+
     .footer-contact-item a {
         color: #ababab;
     }
