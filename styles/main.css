@@ -24,7 +24,7 @@ body {
 header {
     /* background-color: #1A1915; */
     /* background-color: #1a1915a8; */
-    background-image: linear-gradient(to right, #1A1915 , #1A1915);
+    background-image: linear-gradient(to right, #1A1915, #1A1915);
 }
 
 .header-bc {
@@ -88,7 +88,7 @@ header {
 }
 
 /* ========================= logo styles ==========================*/
-.logo {
+#logo {
     width: 100px;
     height: 66px;
 }
@@ -98,6 +98,7 @@ header {
 .carousel-item {
     max-height: 200px;
 }
+
 
 /* ========================= global section styles ==========================*/
 .section-head {
@@ -293,7 +294,7 @@ header {
 
     /* ========================= header styles ==========================*/
     header {
-        background-image: linear-gradient(to right, #1a1915 , #1a191573);
+        background-image: linear-gradient(to right, #1a1915, #1a191573);
     }
 
     .header-contact {
@@ -320,7 +321,7 @@ header {
         top: 5px;
         width: 0;
         position: relative;
-        border: 3px solid rgba(0,0,0,0);
+        border: 3px solid rgba(0, 0, 0, 0);
         border-radius: 3px;
         margin-bottom: 0px;
     }
@@ -364,11 +365,11 @@ header {
 
     /* ========================= logo styles ==========================*/
 
-    .logo {
+    #logo {
         width: 120px;
         height: 80px;
         margin: 0;
-        padding: 5px;
+        /* padding: 5px; */
     }
 
     /* ========================= carousel styles ==========================*/
@@ -382,13 +383,35 @@ header {
 
     /* semi-transparent header settings: */
     .carousel-header {
-        top: -90px;
+        top: -105px;
         margin-bottom: 0px;
     }
-    
+
+    .carousel-header-compensate {
+        margin-top: -105px;
+    }
+
 
     .carousel-item {
         max-height: 95vh;
+    }
+
+    .carousel-caption {
+        top: 50%;
+        text-align: left;
+        left: 3vh;
+        bottom: auto;
+
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.2;
+    }
+
+    .carousel-caption h6 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-caption p {
+        font-size: 3.5rem;
     }
 
     /* .main-heading:hover {
