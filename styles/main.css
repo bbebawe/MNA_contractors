@@ -24,7 +24,7 @@ body {
 header {
     /* background-color: #1A1915; */
     /* background-color: #1a1915a8; */
-    background-image: linear-gradient(to right, #1a1915 , #1a191573);
+    background-image: linear-gradient(to right, #1A1915 , #1A1915);
 }
 
 .header-bc {
@@ -292,6 +292,10 @@ header {
 @media screen and (min-width: 769px) {
 
     /* ========================= header styles ==========================*/
+    header {
+        background-image: linear-gradient(to right, #1a1915 , #1a191573);
+    }
+
     .header-contact {
         text-align: center;
     }
@@ -377,7 +381,7 @@ header {
     } */
 
     /* semi-transparent header settings: */
-    .carousel {
+    .carousel-header {
         top: -90px;
         margin-bottom: 0px;
     }
