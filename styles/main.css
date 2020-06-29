@@ -22,7 +22,9 @@ body {
 
 /* ========================= header styles ==========================*/
 header {
-    background-color: #1A1915;
+    /* background-color: #1A1915; */
+    /* background-color: #1a1915a8; */
+    background-image: linear-gradient(to right, #1a1915 , #1a191573);
 }
 
 .header-bc {
@@ -49,7 +51,8 @@ header {
 
 .navbar .navbar-nav .nav-link {
     font-family: "Raleway", sans-serif;
-    color: #ababab;
+    /* color: #ababab; */
+    color: #d4d4d4;
     text-decoration: none;
     padding: 20px 0px;
     font-size: 18px;
@@ -373,12 +376,15 @@ header {
         padding-bottom: 150px;
     } */
 
+    /* semi-transparent header settings: */
+    .carousel {
+        top: -90px;
+    }
+    
 
     .carousel-item {
-        max-height: 85vh;
+        max-height: 95vh;
     }
-
-
 
     /* .main-heading:hover {
         box-shadow: inset 0 -60px 0 -1px rgba(183, 8, 22, .5);
@@ -419,7 +425,6 @@ header {
         color: #ababab;
     }
 }
-
 
 
 #myCarousel {
