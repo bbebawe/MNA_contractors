@@ -381,7 +381,7 @@ header {
     } */
 
     /* semi-transparent header settings: */
-    .carousel {
+    .carousel-header {
         top: -90px;
     }
     
