@@ -49,6 +49,19 @@ header {
 
 /* ========================= navigation styles ==========================*/
 
+#navbar {
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.navbar-transition {
+    padding: 0px;
+}
+
+.divider-transition {
+    transition: 0.4s;
+}
+
 .navbar .navbar-nav .nav-link {
     font-family: "Raleway", sans-serif;
     /* color: #ababab; */
@@ -91,6 +104,14 @@ header {
 #logo {
     width: 100px;
     height: 66px;
+
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.logo-transition {
+    width: 50px;
+    height: 33px;
 }
 
 /* ========================= carousel styles ==========================*/
@@ -366,8 +387,8 @@ header {
     /* ========================= logo styles ==========================*/
 
     #logo {
-        width: 120px;
-        height: 80px;
+        width: 100px;
+        height: 66px;
         margin: 0;
         /* padding: 5px; */
     }
@@ -383,12 +404,12 @@ header {
 
     /* semi-transparent header settings: */
     .carousel-header {
-        top: -105px;
+        top: -90px;
         margin-bottom: 0px;
     }
 
     .carousel-header-compensate {
-        margin-top: -105px;
+        margin-top: -90px;
     }
 
 
