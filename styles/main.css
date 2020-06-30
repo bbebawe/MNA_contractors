@@ -572,69 +572,41 @@ header {
 
 
 /* ========================= flip styles ==========================*/
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000;
+/* Visit https://nicolaskadis.info/posts/pure-css-flip-cards-using-bootstrap-4-and-css-grid-no-js for an explanation */
+
+.card {
+    /* margin: 10px 10px; */
+    border: 0px;
 }
 
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-  transform: rotateY(180deg);
+/* Flip Cards CSS */
+.card-container {
+    display: grid;
+    perspective: 700px;
 }
 
-.flip-container, .front, .back {
-	width: 250px;
-	height: 250px;
+.card-flip {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
 }
 
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
-/* hide back of pane during swap */
-.front, .back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: 0.6s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transition: 0.6s;
-  -moz-transform-style: preserve-3d;
-  -o-transition: 0.6s;
-  -o-transform-style: preserve-3d;
-  -ms-transition: 0.6s;
-  -ms-transform-style: preserve-3d;
-  transition: 0.6s;
-  transform-style: preserve-3d;
-}
-.front p, .back p {
-  /* color: #fff;
-  font-family: HelveticaNeue, Arial, sans-serif; 
-  text-align: center;
-  font-size: 30px; */
-}
-/* front pane, placed above back */
 .front {
-  -webkit-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  transform: ratateY(0deg);
-  z-index: 2;
+    grid-area: frontAndBack;
 }
 
-/* back, initially hidden pane */
 .back {
-	transform: rotateY(180deg);
-	-webkit-transform: rotateY(-180deg);
-	-moz-transform: rotateY(-180deg);
-	-o-transform: rotateY(-180deg);
-	-ms-transform: rotateY(-180deg);
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+    transform: rotateY(180deg);
 }
