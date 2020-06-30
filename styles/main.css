@@ -252,6 +252,14 @@ header {
     color: #1A1915;
 }
 
+.zoom-effect {
+    transition: transform .2s;
+    padding: 10px;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.5);
+}
 
 
 /* ========================= approach section styles ==========================*/
@@ -577,6 +585,7 @@ header {
 .card {
     /* margin: 10px 10px; */
     border: 0px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* Flip Cards CSS */
